@@ -1,0 +1,180 @@
+h1 {
+    color: #b10005;
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 10px;
+
+
+}
+
+
+nav ul {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #b10005;
+    border: 5px solid #fff;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+nav a {
+
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+
+div {
+    border: 1px solid black;
+    margin: 3px;
+}
+
+.footer-padre {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.grid-container {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 200px;
+    gap: 1px 1px;
+    grid-template-areas:
+        "perro gato video ubicacion";
+}
+
+.perro {
+    text-align: center;
+    grid-area: perro;
+    background-color: darksalmon;
+}
+
+.gato {
+    text-align: center;
+    grid-area: gato;
+    background-color: aquamarine;
+}
+
+.video {
+    text-align: center;
+    grid-area: video;
+    background-color: blueviolet;
+}
+
+.ubicacion {
+    text-align: center;
+    grid-area: ubicacion;
+    background-color: coral;
+}
+
+.footer.p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        border: 1px solid black;
+        display: grid;
+
+
+
+        grid-template-columns: repeat(2, 50%);
+
+        grid-template-rows: repeat(2, 200px);
+
+
+        gap: 1px 1px;
+        grid-template-areas:
+            "perro gato"
+            "video ubicacion"
+        ;
+    }
+
+    .perro {
+        grid-area: perro;
+        background-color: rgb(122, 198, 233);
+    }
+
+    .gato {
+        grid-area: noticia-2;
+        background-color: rgb(88, 24, 64);
+    }
+
+    .video {
+        grid-area: video;
+        background-color: rgb(29, 153, 29);
+    }
+
+    .ubicacion {
+        grid-area: ubicacion;
+        background-color: rgb(150, 230, 46);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .grid-container {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(4, 50%);
+
+
+        grid-template-rows: repeat(1, 200px);
+        gap: 1px 1px;
+        grid-template-areas:
+            "perro"
+            "gato"
+            "video"
+            "ubicacion"
+        ;
+    }
+
+    .perro {
+        grid-area: perro;
+        background-color: white;
+    }
+
+    .gato {
+        grid-area: gato;
+        background-color: red;
+    }
+
+    .video {
+        grid-area: video;
+        background-color: blue;
+    }
+
+    .ubicacion {
+        grid-area: ubicacion;
+        background-color: orange;
+    }
+
+    .footer-padre {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer.p {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        text-align: center;
+    }
+}

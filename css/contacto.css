@@ -1,0 +1,94 @@
+h1 {
+    color: #b10005;
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 10px;
+
+
+}
+
+nav ul {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #b10005;
+    border: 5px solid #fff;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+nav a {
+
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.contenedor {
+    width: 80%;
+    display: inline-block;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+    margin-left: 80px;
+}
+
+
+.texto {
+    width: 70%;
+    margin-left: 150px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #b10005;
+    border: 5px solid white;
+    margin-top: 60px;
+    padding: 0px 30px;
+}
+
+legend.formulario{
+    font-size: 30px;
+    color: #b10005;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+label{
+    font-size: 20px;
+    color: #b10005;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+input{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.contacto{
+    font-size: 20px;
+    color: #b10005;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.condiciones{
+    font-size: 18px;
+    color: #b10005;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
