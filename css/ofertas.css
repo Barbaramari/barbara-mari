@@ -55,8 +55,23 @@ body {
     margin-top: 60px;
     padding: 0px 30px;
 }
+
 footer {
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-}
+        animation-duration: 3s;
+        animation-name: redes;
+    }
+
+    @keyframes redes {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }

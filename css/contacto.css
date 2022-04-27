@@ -55,33 +55,33 @@ body {
     padding: 0px 30px;
 }
 
-legend.formulario{
+legend.formulario {
     font-size: 30px;
     color: #b10005;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-label{
+label {
     font-size: 20px;
     color: #b10005;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-input{
+input {
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-.contacto{
+.contacto {
     font-size: 20px;
     color: #b10005;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.condiciones{
+.condiciones {
     font-size: 18px;
     color: #b10005;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -91,4 +91,18 @@ footer {
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    animation-duration: 2s;
+    animation-name: redes;
+}
+
+@keyframes redes {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
