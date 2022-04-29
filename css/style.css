@@ -87,6 +87,15 @@ div {
     grid-area: ubicacion;
     background-color: coral;
 }
+.img-perro{
+    text-align: center;
+    width: 250px
+}
+
+.img-gato{
+    width: 220px;
+}
+
 
 .p{
     text-align: center;
