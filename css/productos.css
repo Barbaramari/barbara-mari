@@ -33,16 +33,6 @@ body {
     background-color: antiquewhite;
 }
 
-.contenedor {
-    width: 80%;
-    display: inline-block;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 25px;
-    align-items: center;
-    margin-left: 80px;
-}
-
 
 .texto {
     width: 70%;
@@ -57,35 +47,36 @@ body {
 }
 
 .producto {
+    border: 1px solid red;
     display: grid;
-
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     grid-template-rows: 50px 50px;
-
     column-gap: 200px;
+    gap: 1px 1px;
+
 }
 
-.uno {
+.royal{
     background: grey;
     text-align: center;
     border: black 5px solid;
 }
 
-.dos {
+.euka{
     background: rgb(87, 40, 218);
     text-align: center;
     border: black 5px solid;
 }
 
-.tres {
+.prop{
     background: rgb(238, 74, 164);
     text-align: center;
     border: black 5px solid;
 }
 
-.cuatro {
+.exc{
     background: orange;
     text-align: center;
     border: black 5px solid;
@@ -109,4 +100,82 @@ footer {
         margin-left: 0%;
         width: 100%;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .producto {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 100px);
+        gap: 1px 1px;
+        grid-template-areas:
+            "royal euka"
+            "prop exc"
+        }
+
+    .royal{
+        grid-area: Royal Canin;
+        background-color: rgb(122, 198, 233);
+    }
+
+    .euka{
+        grid-area: Eukanuba;
+        background-color: rgb(88, 24, 64);
+    }
+
+    .prop{
+        grid-area: Proplan;
+        background-color: rgb(29, 153, 29);
+    }
+
+    .exc{
+        grid-area: Excellent;
+        background-color: rgb(150, 230, 46);
+    }
+
+@media screen and (max-width: 320px) {
+    .producto {
+        border: 1px solid black;
+        display: grid; 
+        grid-template-columns: repeat(4, 50%);
+        grid-template-rows: repeat(1, 200px);
+        gap: 1px 1px;
+
+    }
+
+    .royal{
+        grid-area: Royal Canin;
+        background-color: white;
+    }
+
+    .euka{
+        grid-area: Eukanuba;
+        background-color: red;
+    }
+
+    .prop{
+        grid-area: Proplan;
+        background-color: blue;
+    }
+
+    .exc{
+        grid-area: Excellent;
+        background-color: orange;
+    }
+
+    .footer-padre {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    
+    .footer.p {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+}
 }
