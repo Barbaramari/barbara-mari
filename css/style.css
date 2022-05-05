@@ -46,13 +46,6 @@ div {
     margin: 3px;
 }
 
-.footer-padre {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-
-}
-
 
 .grid-container {
     border: 1px solid black;
