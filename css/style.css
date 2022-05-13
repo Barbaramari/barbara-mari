@@ -7,11 +7,6 @@ h1 {
 
 }
 
-h1:hover {
-    height: 200px;
-    width: 300px;
-}
-
 
 
 nav ul {
@@ -23,6 +18,7 @@ nav ul {
     text-align: center;
     color: #fff;
     margin-bottom: 10px;
+    list-style: none;
 
 }
 
@@ -97,6 +93,7 @@ div {
     animation-duration: 1s;
     animation-name: redes;
 }
+
 @keyframes redes{
         from {
             margin-left: 100%;
