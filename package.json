@@ -1,9 +1,9 @@
 {
-  "name": "dolcetto-petshop--mari-barbara",
+  "name": "clear",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/nuevo.scss css/quienes-somos.css ",
+    "build-css": "node-sass --include-path scss scss/nuevo.scss  css/style.css ",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

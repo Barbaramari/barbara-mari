@@ -1,0 +1,28 @@
+@import"_variables.scss";
+
+body header {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    background-color: transparent;
+}
+
+body header h1 {
+    font-family: $tipografiatitulo;
+    font-size: $fuentegrande;
+    background-image: none;
+}
+
+body header i{
+    font-size: 130px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header,
+div.fondo {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210327/pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg');
+    background-size: contain;
+    background-repeat: inherit;
+    background-position: 100% 100%  100%;
+}

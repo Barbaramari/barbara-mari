@@ -1,204 +1,72 @@
-h1 {
-    color: #b10005;
-    text-align: center;
-    font-size: 90px;
-    margin-bottom: 10px;
-    transition: height, width, 8s;
+body header {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  background-color: transparent; }
 
-}
+body header h1 {
+  font-family: "Cookie", cursive;
+  font-size: 180px;
+  background-image: none; }
 
+body header i {
+  font-size: 130px;
+  padding-right: 10px;
+  padding-left: 10px; }
 
+header,
+div.fondo {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210327/pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg");
+  background-size: contain;
+  background-repeat: inherit;
+  background-position: 100% 100%  100%; }
 
-nav ul {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 10px;
-    background-color: #b10005;
-    border: 5px solid #fff;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 10px;
-    list-style: none;
+footer {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  margin-top: 50px; }
 
-}
+footer div a i {
+  color: #9b9b9b; }
 
-nav a {
+nav {
+  padding: 0%;
+  margin: 0%;
+  border: solid #9b9b9b; }
 
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 10px 50px;
-    text-decoration: none;
-    color: inherit;
-}
+li.nav-item {
+  color: #9b9b9b;
+  align-items: center;
+  width: 220px; }
 
+.hipervinculos {
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 30px;
+  font-family: 'Lobster Two', cursive; }
+
+.hipervinculos:hover {
+  color: black; }
+
+.enuso {
+  color: #1b3732;
+  font-size: 30px;
+  font-family: 'Lobster Two', cursive; }
+
+.enuso:hover {
+  color: #9b9b9b; }
 
 body {
-    background-color: antiquewhite;
-}
+  background-color: #ffda9e;
+  color: #9b9b9b; }
 
+form fieldset {
+  font-size: 20px;
+  margin-top: 50px;
+  font-family: 'Pacifico', cursive;
+  text-align: center; }
 
-div {
-    border: 1px solid black;
-    margin: 3px;
-}
-
-
-.grid-container {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 200px;
-    gap: 1px 1px;
-    grid-template-areas:
-        "perro gato video ubicacion";
-}
-
-.perro {
-    text-align: center;
-    grid-area: perro;
-    background-color: darksalmon;
-}
-
-.gato {
-    text-align: center;
-    grid-area: gato;
-    background-color: aquamarine;
-}
-
-.video {
-    text-align: center;
-    grid-area: video;
-    background-color: blueviolet;
-}
-
-.ubicacion {
-    text-align: center;
-    grid-area: ubicacion;
-    background-color: coral;
-}
-.img-perro{
-    text-align: center;
-    width: 250px
-}
-
-.img-gato{
-    width: 220px;
-}
-
-
-.p{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    animation-duration: 1s;
-    animation-name: redes;
-}
-
-@keyframes redes{
-        from {
-            margin-left: 100%;
-            width: 300%
-        }
-
-        to {
-            margin-left: 0%;
-            width: 100%;
-        }
-    }
-
-
-
-@media screen and (max-width: 768px) {
-    .grid-container {
-        border: 1px solid black;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 200px);
-        gap: 1px 1px;
-        grid-template-areas:
-            "perro gato"
-            "video ubicacion"
-        ;
-    }
-
-    .perro {
-        grid-area: perro;
-        background-color: rgb(122, 198, 233);
-    }
-
-    .gato {
-        grid-area: gato;
-        background-color: rgb(88, 24, 64);
-    }
-
-    .video {
-        grid-area: video;
-        background-color: rgb(29, 153, 29);
-    }
-
-    .ubicacion {
-        grid-area: ubicacion;
-        background-color: rgb(150, 230, 46);
-    }
-
-    .img-gato{
-        border: solid black;
-    }
-
-    .img-perro{
-        border: solid blac;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .grid-container {
-        border: 1px solid black;
-        display: grid;
-        grid-template-columns: repeat(4, 50%);
-
-
-        grid-template-rows: repeat(1, 200px);
-        gap: 1px 1px;
-        grid-template-areas:
-            "perro"
-            "gato"
-            "video"
-            "ubicacion"
-        ;
-    }
-
-    .perro {
-        grid-area: perro;
-        background-color: white;
-    }
-
-    .gato {
-        grid-area: gato;
-        background-color: red;
-    }
-
-    .video {
-        grid-area: video;
-        background-color: blue;
-    }
-
-    .ubicacion {
-        grid-area: ubicacion;
-        background-color: orange;
-    }
-
-    .footer-padre {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    
-    .footer.p {
-        font-size: 30px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-        text-align: center;
-    }
-}
+legend.formulario {
+  font-size: 50px;
+  margin-bottom: 30px; }
