@@ -103,17 +103,26 @@ a img.ofertas {
   height: 30px;
   align-items: center; }
 
-.imgprod {
+div div .imgprod {
   width: 400px;
   height: 300px;
-  margin-left: 50%;
-  margin-top: 10%; }
+  margin-left: 80%;
+  margin-top: 10%;
+  align-items: center; }
 
 div.quienes img {
   margin-top: 5%;
   text-align: center;
   margin-left: 40%;
   margin-bottom: 3%; }
+
+body div p.quienessomos {
+  color: black;
+  font-family: 'Pacifico', cursive;
+  font-size: x-large;
+  text-align: justify;
+  margin-top: 5%;
+  margin-left: 3%; }
 
 body div img.card2 {
   margin-top: 3%;
@@ -127,9 +136,19 @@ body div div .textovete {
   font-size: 20px;
   font-family: 'Pacifico', cursive; }
 
-body div.oferta {
-  width: 300px;
-  height: 300px; }
+body img.oferta {
+  width: 600px;
+  height: 600px;
+  margin-left: 30%;
+  margin-top: 3%; }
+
+body div p.textooferta {
+  text-decoration: none;
+  color: black;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin-top: 2%;
+  font-size: xx-large; }
 
 @media only screen and (max-width: 700px) {
   html,
