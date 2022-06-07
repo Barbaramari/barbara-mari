@@ -1,14 +1,17 @@
 @import "_variables.scss";
 
-footer{
+
+footer {
+    margin: 0%;
+    padding: 0%;
     text-align: center;
     font-size: xx-large;
-    font-family:'Lobster', cursive;
-    margin-top: 10%;
+    font-family: 'Lobster', cursive;
+    margin-top: 50%;
+    bottom: 0%;
+
 }
 
-footer div a i{
+footer div a i {
     color: $colorletra;
 }
-
-

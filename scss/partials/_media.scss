@@ -2,7 +2,8 @@
 
     html,
     body {
-        min-width: none;;
+        min-width: none;
+        ;
     }
 
     body header {
@@ -14,12 +15,12 @@
 
     body header h1 {
         font-family: $tipografiatitulo;
-        font-size:80px;
+        font-size: 80px;
         background-image: none;
     }
 
     body header i {
-        font-size: 100%;
+        font-size: 100px;
         padding-right: 0%;
         padding-left: 0%;
     }
@@ -29,6 +30,10 @@
         background-size: contain;
         background-repeat: inherit;
         background-position: auto;
+    }
+
+    body footer {
+        margin-top: 450%;
     }
 
 }

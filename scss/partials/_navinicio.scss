@@ -1,39 +1,40 @@
 @import "_variables.scss";
 
-nav{
+nav {
     padding: 0%;
     margin: 0%;
     border: solid $colorletra;
 
 }
 
-div ul{
+div ul {
     width: 100%;
     list-style: none;
     justify-content: space-evenly;
 }
 
-li.nav-item{
-    color: $colorletra;  
-    align-items:flex-end;
+li.nav-item {
+    color: $colorletra;
+    align-items: flex-end;
 }
 
-.hipervinculos{
+.hipervinculos {
     text-decoration: none;
     color: $colorletra;
     font-size: xx-large;
     font-family: 'Lobster Two', cursive;
 }
 
-.hipervinculos:hover{
+.hipervinculos:hover {
     color: black;
 }
 
-.enuso{
+.enuso {
     color: #1b3732;
     font-size: 30px;
     font-family: 'Lobster Two', cursive;
 }
-.enuso:hover{
+
+.enuso:hover {
     color: $colorletra;
 }

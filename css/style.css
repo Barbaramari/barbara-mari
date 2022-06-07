@@ -26,16 +26,7 @@ header {
   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210327/pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg");
   background-size: contain;
   background-repeat: inherit;
-  background-position: 100% 100%  100%; }
-
-footer {
-  text-align: center;
-  font-size: xx-large;
-  font-family: 'Lobster', cursive;
-  margin-top: 10%; }
-
-footer div a i {
-  color: #9b9b9b; }
+  background-position: 100% 100% 100%; }
 
 nav {
   padding: 0%;
@@ -68,9 +59,14 @@ li.nav-item {
 .enuso:hover {
   color: #9b9b9b; }
 
+* {
+  margin: 0%;
+  padding: 0%; }
+
 body {
   background-color: #ffda9e;
-  color: #9b9b9b; }
+  color: #9b9b9b;
+  cursor: pointer; }
 
 form fieldset {
   font-size: 100%;
@@ -82,39 +78,55 @@ legend.formulario {
   font-size: 50px;
   margin-bottom: 5%; }
 
-.contenedor {
-  display: inline;
-  text-align: center; }
-
-div div .card {
-  background-color: none; }
-
-body div div.card {
-  background-color: none; }
-
 a img.ofertas {
   width: 100%;
   height: 30%;
   text-align: center;
   margin-top: 5%; }
 
-.productos {
-  width: 50px;
-  height: 30px;
-  align-items: center; }
+body div .tituloproductos {
+  display: block;
+  margin: auto; }
 
-div div .imgprod {
-  width: 400px;
-  height: 300px;
-  margin-left: 80%;
-  margin-top: 10%;
-  align-items: center; }
+body div.tituloproductos h4 {
+  font-family: "Pacifico", cursive;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 3%; }
+
+.productos {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto; }
+
+div .imgprod {
+  margin-top: 4%;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  object-fit: fill;
+  filter: brightness(100%);
+  animation: escalar 1.5s infinite alternate;
+  border-radius: 40px;
+  display: block; }
+
+@keyframes escalar {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(1.05); } }
+
+div .imgprod:hover {
+  filter: brightness(60%); }
 
 div.quienes img {
-  margin-top: 5%;
-  text-align: center;
-  margin-left: 40%;
-  margin-bottom: 3%; }
+  display: block;
+  margin: auto;
+  margin-top: 3%; }
 
 body div p.quienessomos {
   color: black;
@@ -122,33 +134,233 @@ body div p.quienessomos {
   font-size: x-large;
   text-align: justify;
   margin-top: 5%;
-  margin-left: 3%; }
+  margin-left: 3%;
+  margin-right: 3%; }
 
-body div img.card2 {
-  margin-top: 3%;
-  width: 80%;
-  height: 100%;
-  margin-left: 5%; }
-
-body div div .textovete {
+body .titulovete {
+  font-family: "Pacifico", cursive;
   color: black;
+  size: 60px;
   text-align: center;
-  font-size: 20px;
-  font-family: 'Pacifico', cursive; }
+  margin: auto;
+  margin-top: 3%;
+  font-size: 40px; }
+
+body div div img.servicios {
+  width: 300px;
+  height: 340px;
+  margin-left: 30%;
+  margin-top: 3%;
+  border-radius: 10px; }
+
+body div p.textovete {
+  text-decoration: none;
+  color: black;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin-top: 2%;
+  font-size: large;
+  text-align: center; }
+
+.cajaveterinaria {
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0%; }
+
+div.boxvete {
+  width: 360px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 10px;
+  transition: all 0, 25s;
+  margin-top: 3%; }
+
+body div.cajaveterinaria .boxvete:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
+  background-color: #ffbffa; }
+
+body div.cajaveterinaria .boxvete .servicios {
+  width: 200px;
+  height: 220px;
+  margin: 3%;
+  align-items: center; }
+
+body .cajaveterinaria .boxvete p {
+  padding: 0 1rem;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Pacifico", cursive;
+  color: black; }
+
+body div.cajaveterinaria .boxvete a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #e28915;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin-left: 40%;
+  font-size: large; }
+
+body div.cajaveterinaria .boxvete a:hover {
+  color: #fafafa; }
 
 body img.oferta {
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   margin-left: 30%;
-  margin-top: 3%; }
+  margin-top: 3%;
+  border-radius: 70%; }
 
 body div p.textooferta {
   text-decoration: none;
   color: black;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   text-align: center;
   margin-top: 2%;
-  font-size: xx-large; }
+  font-size: large;
+  text-align: center; }
+
+.cajaoferta {
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0%; }
+
+div.boxof {
+  width: 360px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 10px;
+  transition: all 0, 25s;
+  margin-top: 3%; }
+
+body div.cajaoferta .boxof:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
+  background-color: aliceblue; }
+
+body div.cajaoferta .boxof .oferta {
+  width: 200px;
+  height: 220px;
+  margin: 3%;
+  align-items: center; }
+
+body .cajaoferta .boxof p {
+  padding: 0 1rem;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Pacifico", cursive;
+  color: black; }
+
+body div.cajaoferta .boxof a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #e28915;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin-left: 40%; }
+
+body div.cajaoferta .boxof a:hover {
+  color: #ff4040; }
+
+div.slide {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  margin-top: 2%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  flex: 0 0 100%;
+  object-fit: cover;
+  scroll-snap-align: center; }
+
+div .slide img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.containerinicio {
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0%; }
+
+div.cardinicio {
+  width: 360px;
+  height: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba black;
+  overflow: hidden;
+  margin: 10px;
+  transition: all 0, 25s;
+  margin-top: 3%; }
+
+body div.containerinicio .cardinicio:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  background-color: #9b9b9b; }
+
+body div.containerinicio .cardinicio img {
+  width: 330px;
+  height: 220px;
+  margin: 4%;
+  align-items: center; }
+
+body div.containerinicio .cardinicio h4 {
+  font-weight: 600;
+  font-size: 50px;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  color: black;
+  margin-top: 4%; }
+
+body .containerinicio .cardinicio p {
+  padding: 0 1rem;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Pacifico", cursive;
+  color: black; }
+
+body div.containerinicio .cardinicio a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #e28915;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  margin-left: 40%; }
+
+body div.containerinicio .cardinicio a:hover {
+  color: black; }
+
+footer {
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Lobster', cursive;
+  margin-top: 50%;
+  bottom: 0%; }
+
+footer div a i {
+  color: #9b9b9b; }
 
 @media only screen and (max-width: 700px) {
   html,
@@ -164,11 +376,13 @@ body div p.textooferta {
     font-size: 80px;
     background-image: none; }
   body header i {
-    font-size: 100%;
+    font-size: 100px;
     padding-right: 0%;
     padding-left: 0%; }
   header {
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210327/pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg");
     background-size: contain;
     background-repeat: inherit;
-    background-position: auto; } }
+    background-position: auto; }
+  body footer {
+    margin-top: 450%; } }
