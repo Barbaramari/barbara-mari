@@ -4,18 +4,25 @@ body header {
   text-align: center;
   background-color: transparent; }
 
-body header h1 {
+a h1 {
   font-family: "Cookie", cursive;
   font-size: 180px;
   background-image: none; }
 
-body header i {
-  font-size: 130px;
-  padding-right: 10px;
-  padding-left: 10px; }
+.vinculoinicio {
+  color: #9b9b9b;
+  text-decoration: none; }
 
-header,
-div.fondo {
+.vinculoinicio:hover {
+  color: #817d7d; }
+
+body header i {
+  font-size: 100%;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: 2%; }
+
+header {
   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210327/pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg");
   background-size: contain;
   background-repeat: inherit;
@@ -23,9 +30,9 @@ div.fondo {
 
 footer {
   text-align: center;
-  font-size: 30px;
+  font-size: xx-large;
   font-family: 'Lobster', cursive;
-  margin-top: 50px; }
+  margin-top: 10%; }
 
 footer div a i {
   color: #9b9b9b; }
@@ -35,15 +42,19 @@ nav {
   margin: 0%;
   border: solid #9b9b9b; }
 
+div ul {
+  width: 100%;
+  list-style: none;
+  justify-content: space-evenly; }
+
 li.nav-item {
   color: #9b9b9b;
-  align-items: center;
-  width: 220px; }
+  align-items: flex-end; }
 
 .hipervinculos {
   text-decoration: none;
   color: #9b9b9b;
-  font-size: 30px;
+  font-size: xx-large;
   font-family: 'Lobster Two', cursive; }
 
 .hipervinculos:hover {
@@ -62,19 +73,68 @@ body {
   color: #9b9b9b; }
 
 form fieldset {
-  font-size: 20px;
-  margin-top: 50px;
+  font-size: 100%;
+  margin-top: 5%;
   font-family: 'Pacifico', cursive;
   text-align: center; }
 
 legend.formulario {
   font-size: 50px;
-  margin-bottom: 30px; }
+  margin-bottom: 5%; }
+
+.contenedor {
+  display: inline;
+  text-align: center; }
+
+div div .card {
+  background-color: none; }
+
+body div div.card {
+  background-color: none; }
+
+a img.ofertas {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  margin-top: 5%; }
+
+.productos {
+  width: 50px;
+  height: 30px;
+  align-items: center; }
+
+.imgprod {
+  width: 400px;
+  height: 300px;
+  margin-left: 50%;
+  margin-top: 10%; }
+
+div.quienes img {
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 40%;
+  margin-bottom: 3%; }
+
+body div img.card2 {
+  margin-top: 3%;
+  width: 80%;
+  height: 100%;
+  margin-left: 5%; }
+
+body div div .textovete {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive; }
+
+body div.oferta {
+  width: 300px;
+  height: 300px; }
 
 @media only screen and (max-width: 700px) {
   html,
   body {
-    min-height: 100vh; }
+    min-width: none; }
   body header {
     margin: 0%;
     padding: 0%;
@@ -82,14 +142,13 @@ legend.formulario {
     background-color: transparent; }
   body header h1 {
     font-family: "Cookie", cursive;
-    font-size: 90px;
+    font-size: 80px;
     background-image: none; }
   body header i {
-    font-size: 20px;
-    padding-right: 10px;
-    padding-left: 10px; }
-  header,
-  div.fondo {
+    font-size: 100%;
+    padding-right: 0%;
+    padding-left: 0%; }
+  header {
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210327/pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg");
     background-size: contain;
     background-repeat: inherit;

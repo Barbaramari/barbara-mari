@@ -7,20 +7,30 @@ body header {
     background-color: transparent;
 }
 
-body header h1 {
+a h1{
     font-family: $tipografiatitulo;
     font-size: $fuentegrande;
     background-image: none;
+    
+}
+
+.vinculoinicio{
+    color:$colorletra;
+    text-decoration: none;
+}
+
+.vinculoinicio:hover{
+    color:#817d7d;
 }
 
 body header i{
-    font-size: 130px;
-    padding-right: 10px;
-    padding-left: 10px;
+    font-size:100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 2%;
 }
 
-header,
-div.fondo {
+header{
     background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210327/pngtree-cute-dog-tiling-background-silhouette-small-animal-image_595773.jpg');
     background-size: contain;
     background-repeat: inherit;

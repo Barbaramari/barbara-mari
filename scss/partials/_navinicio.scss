@@ -1,22 +1,27 @@
 @import "_variables.scss";
 
-nav {
+nav{
     padding: 0%;
     margin: 0%;
     border: solid $colorletra;
 
 }
 
+div ul{
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
 li.nav-item{
     color: $colorletra;  
-    align-items: center;
-    width: 220px;
+    align-items:flex-end;
 }
 
 .hipervinculos{
     text-decoration: none;
     color: $colorletra;
-    font-size: 30px;
+    font-size: xx-large;
     font-family: 'Lobster Two', cursive;
 }
 

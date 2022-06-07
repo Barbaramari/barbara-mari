@@ -6,14 +6,78 @@ body {
 }
 
 
-form fieldset{
-    font-size: 20px;
-    margin-top: 50px;
+form fieldset {
+    font-size: 100%;
+    margin-top: 5%;
     font-family: 'Pacifico', cursive;
     text-align: center;
 }
 
-legend.formulario{
-    font-size: 50px;
-    margin-bottom: 30px;
+legend.formulario {
+    font-size:50px;
+    margin-bottom: 5%;
+}
+
+.contenedor{
+    display: inline;
+    text-align: center; 
+}
+
+div div .card{
+    background-color: none;
+}
+
+body div div.card{
+    background-color: none;
+}
+
+
+a img.ofertas{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.productos{
+    width: 50px;
+    height: 30px;
+    align-items: center;
+
+}
+
+.imgprod {
+    width: 400px;
+    height: 300px;
+    margin-left: 50%;
+    margin-top: 10%;
+
+
+}
+div.quienes img{
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 3%;
+}
+
+body div img.card2{
+    margin-top: 3%;
+    width: 80%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+
+body div div .textovete{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Pacifico', cursive;
+
+
+}
+body div.oferta{
+    width: 300px;
+    height: 300px;
 }
